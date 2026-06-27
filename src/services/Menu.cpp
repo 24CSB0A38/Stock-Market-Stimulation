@@ -167,6 +167,7 @@ namespace StockMarket {
             case 10: handleViewProfile();            break;
             case 0:
                 auth.saveUsersToFile(DATA_USERS_FILE);
+                FileManager::saveAllTransactions(transactionLog, DATA_TRANSACTIONS_FILE);
                 auth.logout();
                 std::cout << "\n[OK] Logged out successfully.\n";
                 break;
@@ -201,6 +202,9 @@ namespace StockMarket {
             case 6: handleMarketStatusToggle();  break;
             case 7: handleAdminProfile();        break;
             case 0:
+                auth.saveUsersToFile(DATA_USERS_FILE);
+                FileManager::saveMarketData(market, DATA_STOCKS_FILE);
+                FileManager::saveAllTransactions(transactionLog, DATA_TRANSACTIONS_FILE);
                 auth.logout();
                 std::cout << "\n[OK] Admin logged out.\n";
                 break;
@@ -448,7 +452,6 @@ namespace StockMarket {
 
     void Menu::handleViewTransactionHistory() const {
         const User& user = auth.getCurrentUserAsUser();
-        std::string uname = Utils::toUpperCase(user.getUsername());
 
         Utils::printHeader("Transaction History  |  " + user.getUsername());
 
