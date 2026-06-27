@@ -94,10 +94,9 @@ namespace StockMarket {
         std::string username, password;
 
         std::cout << "Enter username: ";
-        std::cin >> username;
+        std::getline(std::cin, username);
         std::cout << "Enter password: ";
-        std::cin >> password;
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        std::getline(std::cin, password);
 
         double balance = getValidInput<double>("Enter initial deposit ($): ", 0.0, 1e9);
 
@@ -115,10 +114,9 @@ namespace StockMarket {
         std::string username, password;
 
         std::cout << "Enter username: ";
-        std::cin >> username;
+        std::getline(std::cin, username);
         std::cout << "Enter password: ";
-        std::cin >> password;
-        std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        std::getline(std::cin, password);
 
         try {
             auth.login(username, password);
