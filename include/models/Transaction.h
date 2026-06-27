@@ -8,6 +8,7 @@ namespace StockMarket {
     class Transaction {
     private:
         std::string transactionId;
+        std::string username;
         std::string ticker;
         std::string type; // "BUY" or "SELL"
         int quantity;
@@ -19,10 +20,11 @@ namespace StockMarket {
         Transaction();
 
         // Parameterized constructor
-        Transaction(const std::string& transactionId, const std::string& ticker, 
+        Transaction(const std::string& transactionId, const std::string& username, const std::string& ticker, 
                     const std::string& type, int quantity, double price, 
                     const std::string& timestamp);
-
+        
+        std::string getUsername() const;
         // Accessors (Const correct)
         std::string getTransactionId() const;
         std::string getTicker() const;

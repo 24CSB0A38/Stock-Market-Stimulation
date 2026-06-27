@@ -1,3 +1,4 @@
 admin,admin123,ADMIN,0.0,,
 ADMIN,admin123,ADMIN,0.0,,
+Padma,Abcd,USER,1000,,
 LJ,Vishnu,USER,464.5,AAPL,AAPL:3:178.5
