@@ -1,0 +1,10 @@
+JPM,JPMorgan Chase & Co.,198.7,198.7,198.7,0,198.7
+NFLX,Netflix Inc.,625.9,625.9,625.9,0,625.9
+NVDA,NVIDIA Corporation,875.4,875.4,875.4,0,875.4
+AMZN,Amazon.com Inc.,198.3,198.3,198.3,0,198.3
+V,Visa Inc.,275.4,275.4,275.4,0,275.4
+META,Meta Platforms Inc.,520.1,520.1,520.1,0,520.1
+TSLA,Tesla Inc.,248.5,248.5,248.5,0,248.5
+GOOGL,Alphabet Inc.,175.8,175.8,175.8,0,175.8
+MSFT,Microsoft Corporation,415.2,415.2,415.2,0,415.2
+AAPL,Apple Inc.,178.5,178.5,178.5,0,178.5
